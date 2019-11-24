@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libdeliverytypes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Deliverytypeid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libDeliverytype in libDeliverytypes %}
+            <tr>
+                <td><a href="{{ path('libdeliverytype_show', { 'deliverytypeid': libDeliverytype.deliverytypeid }) }}">{{ libDeliverytype.type }}</a></td>
+                <td>{{ libDeliverytype.deliverytypeid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libdeliverytype_show', { 'deliverytypeid': libDeliverytype.deliverytypeid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libdeliverytype_edit', { 'deliverytypeid': libDeliverytype.deliverytypeid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libdeliverytype_new') }}">Create a new libDeliverytype</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libcity</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>City</th>
+                <td>{{ libCity.city }}</td>
+            </tr>
+            <tr>
+                <th>Cityid</th>
+                <td>{{ libCity.cityid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libcity_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libcity_edit', { 'cityid': libCity.cityid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

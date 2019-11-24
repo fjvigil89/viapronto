@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libbusinesstypes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Businesstype</th>
+                <th>Businesstypeid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libBusinesstype in libBusinesstypes %}
+            <tr>
+                <td><a href="{{ path('libbusinesstype_show', { 'businesstypeid': libBusinesstype.businesstypeid }) }}">{{ libBusinesstype.businesstype }}</a></td>
+                <td>{{ libBusinesstype.businesstypeid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libbusinesstype_show', { 'businesstypeid': libBusinesstype.businesstypeid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libbusinesstype_edit', { 'businesstypeid': libBusinesstype.businesstypeid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libbusinesstype_new') }}">Create a new libBusinesstype</a>
+        </li>
+    </ul>
+{% endblock %}

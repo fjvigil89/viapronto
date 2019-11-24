@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libshipmentstatus</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Status</th>
+                <td>{{ libShipmentstatus.status }}</td>
+            </tr>
+            <tr>
+                <th>Shipmentstatusid</th>
+                <td>{{ libShipmentstatus.shipmentstatusid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libshipmentstatus_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libshipmentstatus_edit', { 'shipmentstatusid': libShipmentstatus.shipmentstatusid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

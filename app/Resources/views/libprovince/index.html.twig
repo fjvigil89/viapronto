@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libprovinces list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Province</th>
+                <th>Provinceid</th>
+                <th>Statecode</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libProvince in libProvinces %}
+            <tr>
+                <td><a href="{{ path('libprovince_show', { 'provinceid': libProvince.provinceid }) }}">{{ libProvince.province }}</a></td>
+                <td>{{ libProvince.provinceid }}</td>
+                <td>{{ libProvince.statecode }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libprovince_show', { 'provinceid': libProvince.provinceid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libprovince_edit', { 'provinceid': libProvince.provinceid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libprovince_new') }}">Create a new libProvince</a>
+        </li>
+    </ul>
+{% endblock %}

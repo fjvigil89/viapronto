@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Stop</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Country</th>
+                <td>{{ stop.country }}</td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td>{{ stop.city }}</td>
+            </tr>
+            <tr>
+                <th>Arrivaldatetime</th>
+                <td>{% if stop.arrivaldatetime %}{{ stop.arrivaldatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Stopid</th>
+                <td>{{ stop.stopid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('stop_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('stop_edit', { 'stopid': stop.stopid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

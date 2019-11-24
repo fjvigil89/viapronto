@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libitemcategories list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Itemcategoryid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libItemcategory in libItemcategories %}
+            <tr>
+                <td><a href="{{ path('libitemcategory_show', { 'itemcategoryid': libItemcategory.itemcategoryid }) }}">{{ libItemcategory.category }}</a></td>
+                <td>{{ libItemcategory.itemcategoryid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libitemcategory_show', { 'itemcategoryid': libItemcategory.itemcategoryid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libitemcategory_edit', { 'itemcategoryid': libItemcategory.itemcategoryid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libitemcategory_new') }}">Create a new libItemcategory</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Stops list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Arrivaldatetime</th>
+                <th>Stopid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for stop in stops %}
+            <tr>
+                <td><a href="{{ path('stop_show', { 'stopid': stop.stopid }) }}">{{ stop.country }}</a></td>
+                <td>{{ stop.city }}</td>
+                <td>{% if stop.arrivaldatetime %}{{ stop.arrivaldatetime|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ stop.stopid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('stop_show', { 'stopid': stop.stopid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('stop_edit', { 'stopid': stop.stopid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('stop_new') }}">Create a new stop</a>
+        </li>
+    </ul>
+{% endblock %}

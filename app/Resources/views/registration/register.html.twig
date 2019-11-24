@@ -1,0 +1,121 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+        <div class="slider-with-overlay">
+
+
+            <section class="section section-text-light section-background m-none"
+                     style="background: url('img/photos/handler-slide2.jpg'); background-size: cover;height: 40em">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="slider-contact-form">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-7">
+
+                            <div class="featured-boxes mt-none mb-none">
+                                <div class="featured-box featured-box-primary mt-xl">
+                                    <div class="box-content">
+                                        <h4 class="mb-none">Create your account</h4><br>
+
+                                        {{ form_start(form,  { 'attr' : { 'id': 'contactForm' } }) }}
+                                            <div>{{ form_errors(form) }}</div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+
+                                                        {{ form_widget(form.firstname, { 'attr' : { 'class': 'form-control', 'name':'firstname', 'placeholder':'First Name', 'data-msg-required':'Please enter the subject.', 'maxlength':'100', 'id':'firstname' } }) }}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+
+                                                        {{ form_widget(form.lastname, { 'attr' : { 'class': 'form-control', 'name':'lastname', 'placeholder':'Last Name', 'data-msg-required':'Please enter the subject.', 'maxlength':'100', 'id':'firstname' } }) }}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+
+                                                        {{ form_widget(form.email, { 'attr' : { 'class': 'form-control', 'name':'email', 'placeholder':'Email', 'data-msg-required':'Please enter the subject.', 'maxlength':'100', 'id':'email' } }) }}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+
+
+                                                        <br><p style="text-align:right";>Already have an account? <a href="{{ path('signin') }}">Sign in</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <input type="submit" value="Submit" class="btn btn-primary mb-xl" data-loading-text="Loading...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="alert alert-success hidden" id="contactSuccess">
+                                                        Message has been sent to us.
+                                                    </div>
+
+                                                    <div class="alert alert-danger hidden" id="contactError">
+                                                        Error sending your message.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+        <section class=" bg-dashboard head-dashboard ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title-dashboard">Welcome Rhod</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-dashboard">
+
+
+
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        {% include 'templates/side-dashboard.html.twig' %}
+                    </div>
+                    <div class="col-md-8 bg-white">
+                        <section class = "custom-section-padding">
+                            <div class="container ">
+
+                                <h2>Void shipment</h2>
+                                <div class="col-md-8 ">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Tracking Number</th>
+                                            <th>Description</th>
+                                            <th>Status</th>
+
+                                            <th> </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>123423534</td>
+                                            <td>brother 's birthday</td>
+                                            <td>At delivery location</td>
+
+                                            <td><span class="glyphicon glyphicon-remove" title="add"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3434543434</td>
+                                            <td>Package 3</td>
+                                            <td>Pending</td>
+
+                                            <td><span class="glyphicon glyphicon-remove" title="add"></span></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+        </section>
+        <section class=" bg-dashboard head-dashboard ">
+
+        </section>
+    </div>
+{% endblock %}

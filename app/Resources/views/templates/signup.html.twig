@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+
+        <section class="parallax section section-text-light section-parallax section-center image_parallax_s1 " data-plugin-parallax
+                 data-plugin-options="{'speed': 1.5}" data-image-src="img/photos/handler-slide2.jpg">
+            <div class="container">
+                <div class="row">
+
+                    <div class="slider-contact-form">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-5 col-md-offset-7">
+
+                                    <div class="featured-boxes mt-none mb-none">
+                                        <div class="featured-box featured-box-primary mt-xl">
+                                            <div class="box-content">
+                                                <p style="font-size:1.4em;color: #428bca">Create your account</p><br>
+
+                                                <form id="contactForm" action="php/contact-form.php" method="POST">
+
+
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+
+                                                                <input type="text" placeholder="First Name" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="firstname" id="firstname" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+
+                                                                <input type="text" placeholder="Last Name" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="lastname" id="lastname" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+
+                                                                <input type="text" placeholder="Email" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="email" id="email" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+
+                                                                <input type="password" placeholder="Password" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="password" id="password" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <div class="col-md-12">
+
+                                                                <input type="password" placeholder="Confirm your password" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="repassword" id="repassword" required>
+                                                                <br><p style="text-align:right";>Already have an account? <a href="{{ path('signin') }}">Sign in</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <input type="submit" value="Submit" class="btn btn-primary mb-xl" data-loading-text="Loading...">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="alert alert-success hidden" id="contactSuccess">
+                                                                Message has been sent to us.
+                                                            </div>
+
+                                                            <div class="alert alert-danger hidden" id="contactError">
+                                                                Error sending your message.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+{% endblock %}

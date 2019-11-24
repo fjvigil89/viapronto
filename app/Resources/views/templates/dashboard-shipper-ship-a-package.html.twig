@@ -1,0 +1,930 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+        <section class=" bg-dashboard head-dashboard ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title-dashboard">Welcome Rhod</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dashboard">
+
+
+            <div class="row ">
+                <div class="col-md-3 ">
+                    {% include 'templates/side-dashboard.html.twig' %}
+                </div>
+                <div class="col-md-8 bg-white">
+                    <section class="custom-section-padding">
+                        <div class="container ">
+
+                            <h2>Package information</h2>
+                            <div class="row custom-section-padding ">
+
+                                <div class="col-md-2 ">
+                                    <aside class="sidebar ">
+
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                            <img src="img/photos/photo-2.jpg" alt class="img-responsive"/>
+                                        </div>
+
+
+                                    </aside>
+                                </div>
+                                <div class="col-md-8 ">
+
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            <p class="mb-none ">Description</p><br>
+
+                                        </div>
+                                        <div class="col-md-5">
+
+                                            <input type="text" value="" maxlength="100" class="form-control"
+                                                   name="firstname" id="firstname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            <p class="mb-none ">Value</p><br>
+
+                                        </div>
+                                        <div class="col-md-5">
+
+                                            <input type="text" value="" maxlength="100" class="form-control"
+                                                   name="lastname" id="lastname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            <p class="mb-none ">Delivery code</p><br>
+
+                                        </div>
+                                        <div class="col-md-5">
+
+                                            <input type="text" value="" maxlength="100" class="form-control"
+                                                   name="email" id="email" required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="col-md-8 medium-padding">
+                                    <div class="col-md-7 col-sm-6 ">
+
+																				<span class="thumb-info thumb-info-hide-wrapper-bg">
+
+																							<span class="thumb-info-caption">
+																							<h4 class="mb-none text-center">Dimension</h4><br>
+																							<div class="row">
+																							<div class="form-group">
+
+
+
+																								<div class="col-md-2 col-md-offset-1">
+																							<input type="text" value="L"
+                                                                                                   data-msg-required="Please enter the subject."
+                                                                                                   maxlength="100"
+                                                                                                   class="form-control"
+                                                                                                   name="large"
+                                                                                                   id="large" required>
+
+																								</div>
+
+
+																								<div class="col-md-2">
+																							<input type="text" value="W"
+                                                                                                   data-msg-required="Please enter the subject."
+                                                                                                   maxlength="100"
+                                                                                                   class="form-control"
+                                                                                                   name="weight"
+                                                                                                   id="weight" required>
+
+
+																								</div>
+
+
+																								<div class="col-md-2">
+																							<input type="text" value="H"
+                                                                                                   data-msg-required="Please enter the subject."
+                                                                                                   maxlength="100"
+                                                                                                   class="form-control"
+                                                                                                   name="height"
+                                                                                                   id="height" required>
+
+
+																								</div>
+																							<div class="col-md-3">
+																								<select name="weight"
+                                                                                                        class="form-control ">
+																									  <option value="lb">lb</option>
+																									  <option value="kg">kg</option>
+
+
+																								</select>
+																							</div>
+
+
+																							</div>
+
+																							</div>
+																							</span>
+																				</span>
+
+
+                                    </div>
+
+
+                                    <div class="col-md-4 col-sm-6 ">
+
+																		<span class="thumb-info thumb-info-hide-wrapper-bg">
+
+																			<span class="thumb-info-caption">
+																			<h4 class="mb-none text-center">Weight</h4><br>
+																																<div class="row">
+																			<div class="form-group">
+
+
+
+
+																				<div class="col-md-5 col-md-offset-1">
+																			<input type="text" value=""
+                                                                                   data-msg-required="Please enter the subject."
+                                                                                   maxlength="100" class="form-control"
+                                                                                   name="weight" id="weight" required>
+
+
+																				</div>
+
+
+																			<div class="col-md-5">
+																				<select name="City"
+                                                                                        class="form-control">
+																					  <option value="lb">lb</option>
+																					  <option value="kg">kg</option>
+
+
+																				</select>
+																				</div>
+
+
+																			</div>
+
+																			</div>
+																			</span>
+																		</span>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 ">
+                                <div class="medium-padding">
+                                    <h2>Items list</h2>
+                                    <table class="table table-striped ">
+                                        <thead>
+                                        <tr>
+                                            <th>Quantity</th>
+                                            <th>Category</th>
+                                            <th>Description</th>
+                                            <th>Fragile</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Personal efects</td>
+                                            <td>jeans</td>
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Electronics</td>
+                                            <td>Iphone</td>
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" value="0"
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="large" id="large" required></td>
+                                            <td>
+                                                <select name="document_type" class="form-control">
+                                                    <option value="1">Personals efects</option>
+                                                    <option value="2">documents</option>
+
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="0"
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="large" id="large" required></td>
+                                            </td>
+                                            <td><input type="checkbox"></td>
+
+                                            <td><input type="submit" value="add" class="btn button-dashboard "></td>
+
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-8 ">
+                                <div class="custom-section-padding">
+                                    <h2>Comments (special instructions for handler)</h2>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-8 ">
+                                <div class="custom-section-padding">
+                                    <h2>Summary</h2>
+                                    <div class="dashboard-padding">
+                                        <div class="col-md-4">
+                                            <h6 class="mb-none "><strong>Number of items </strong></h6><br>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h6 class="mb-none ">2</h6><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="dashboard-padding">
+                                        <div class="col-md-4">
+                                            <h6 class="mb-none "><strong>Price estimate</strong></h6><br>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h6 class="mb-none ">US$ 40.00 </h6><br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12 ">
+
+                                <div class="medium-padding">
+
+
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-12 col-sm-12 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <div class="row">
+                                                            <div class="dashboard-padding">
+                                                                <div class="col-md-5 col-md-offset-1">
+                                                                    <h6 class="mb-none "><strong>Near</strong></h6>
+                                                                    <br>
+                                                                </div>
+                                                                <div class="col-md-5">
+                                                                    <h6 class="mb-none ">Use my current
+                                                                        location</h6><br>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+
+                                                                <div class="col-md-8 col-md-offset-1">
+                                                                    <select name="City" class="form-control">
+                                                                        <option value="lb">lb</option>
+                                                                        <option value="kg">kg</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="col-md-2 ">
+                                                                    <td><input type="submit" value="go"
+                                                                               class="btn button-dashboard "></td>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group">
+
+                                                                <div class="col-md-10 col-md-offset-1">
+                                                                    <select name="City" class="form-control">
+                                                                        <option value="1">Canada</option>
+                                                                        <option value="2">USA</option>
+
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-md-offset-1">
+                                                                <div class="">
+
+                                                                    <h6 class="mb-none ">Refine Search</h6><br>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-md-offset-1">
+                                                                <div class="">
+
+                                                                    <h6 class="mb-none ">Clear Filters</h6><br>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 text-center ">
+                                                            <img src="img/photos/map.jpg" alt
+                                                                 class="img-responsive"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <h4 class="mb-none ">Result</h4><br>
+                                                        <div class="row ">
+                                                            <div class="dashboard-padding">
+                                                                <div class="col-md-4">
+                                                                    <h6 class="mb-none "><strong>Sort by : </strong>
+                                                                    </h6><br>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <select name="City" class="form-control">
+                                                                        <option value="1">Canada</option>
+                                                                        <option value="2">USA</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <h4 class="mb-none ">Your choice</h4><br>
+                                                        <div class="row ">
+                                                            <div class="dashboard-padding">
+                                                                <div class="col-md-4">
+                                                                    <h6 class="mb-none "><strong>Store : </strong>
+                                                                    </h6><br>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <h6 class="mb-none ">Drugstore </h6><br>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="dashboard-padding">
+                                                                <div class="col-md-4">
+                                                                    <h6 class="mb-none "><strong>Address </strong>
+                                                                    </h6><br>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <h6 class="mb-none ">4242 Av de
+                                                                        Maisonneuve </h6><br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <div class="col-md-4">
+                                                                    <h6 class="mb-none "><strong>Schedule
+                                                                            : </strong></h6><br>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <h6 class="mb-none ">6:00 | 15:00 </h6><br>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <h4 class="mb-none ">Result</h4><br>
+                                                        <div class="row ">
+                                                            <div class="col-md-4 ">
+
+
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <img src="img/photos/local.png" alt
+                                                                         class="img-responsive"/>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <h6 class="mb-none ">3,2 km </h6><br>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                            <div class="col-md-8 ">
+
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Store 1 Drugstore </h6>
+                                                                        <br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">4242 Av de
+                                                                            Maisonneuve </h6><br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Ground 6:00 |
+                                                                            15:00 </h6><br>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-7">
+
+                                                                    <input type="submit" value="Ok"
+                                                                           class="btn button-dashboard "></div>
+                                                                <div class="col-md-3">
+
+                                                                    <h6 class="mb-none ">Directions </h6><br>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <h4 class="mb-none ">Result</h4><br>
+                                                        <div class="row ">
+                                                            <div class="col-md-4 ">
+
+
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <img src="img/photos/local.png" alt
+                                                                         class="img-responsive"/>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <h6 class="mb-none ">3,2 km </h6><br>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                            <div class="col-md-8 ">
+
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Store 1 Drugstore </h6>
+                                                                        <br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">4242 Av de
+                                                                            Maisonneuve </h6><br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Ground 6:00 |
+                                                                            15:00 </h6><br>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-7">
+
+                                                                    <input type="submit" value="Ok"
+                                                                           class="btn button-dashboard "></div>
+                                                                <div class="col-md-3">
+
+                                                                    <h6 class="mb-none ">Directions </h6><br>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="featured-boxes mt-none mb-none">
+                                                <div class="featured-box featured-box-quaternary mt-xl">
+                                                    <div class="box-content left-align">
+
+                                                        <h4 class="mb-none ">Result</h4><br>
+                                                        <div class="row ">
+                                                            <div class="col-md-4 ">
+
+
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <img src="img/photos/local.png" alt
+                                                                         class="img-responsive"/>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                                    <h6 class="mb-none ">3,2 km </h6><br>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                            <div class="col-md-8 ">
+
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Store 1 Drugstore </h6>
+                                                                        <br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">4242 Av de
+                                                                            Maisonneuve </h6><br>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="mb-none ">Ground 6:00 |
+                                                                            15:00 </h6><br>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-7">
+
+                                                                    <input type="submit" value="Ok"
+                                                                           class="btn button-dashboard "></div>
+                                                                <div class="col-md-3">
+
+                                                                    <h6 class="mb-none ">Directions </h6><br>
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="container ">
+
+                                    <h2>Delivery location</h2>
+                                    <h4>Receiver information</h4>
+                                    <div class="row ">
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Delivery option</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="prwreceiver" class="form-control">
+                                                        <option value="1">HOME DELIVERY</option>
+                                                        <option value="2">AIRPORT PICKUP</option>
+                                                        <option value="2">DROP-OFF CENTER</option>
+                                                    </select>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Previous receiver</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="prwreceiver" class="form-control">
+                                                        <option value="1">Carlos Mendez</option>
+                                                        <option value="2">Jhon Lefevre</option>
+
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Contact</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="businesstype" class="form-control">
+                                                        <option value="1">Mary chen</option>
+                                                        <option value="2">Luciana Ramirez</option>
+
+                                                    </select></div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">First name</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="" maxlength="100" class="form-control"
+                                                           name="email" id="email" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Last name</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="" maxlength="100" class="form-control"
+                                                           name="email" id="email" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Country</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="country" class="form-control">
+                                                        <option value="1">Canada</option>
+                                                        <option value="2">USA</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Province / State</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="city" class="form-control">
+                                                        <option value="1">Quebec</option>
+                                                        <option value="2">Ontario</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">City</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <select name="city" class="form-control">
+                                                        <option value="1">Montreal</option>
+                                                        <option value="2">Toronto</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Address</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="34634343" maxlength="100"
+                                                           class="form-control" name="address" id="address">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Phone (Primary)</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="2543634" maxlength="100"
+                                                           class="form-control" name="phoneprimary"
+                                                           id="phoneprimary" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Email</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="asd@gmail.com" maxlength="100"
+                                                           class="form-control" name="email" id="email">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Zip Code</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="" maxlength="100" class="form-control"
+                                                           name="zipcode" id="zipcode">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <h6 class="mb-none ">Alternate receiver</h6><br>
+
+                                                </div>
+                                                <div class="col-md-5">
+
+                                                    <input type="text" value="" maxlength="100" class="form-control"
+                                                           name="altreceiver" id="altreceiver">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+
+
+                                                    <div>
+                                                        <input type="checkbox" id="addcontact" name="addcontact"
+                                                               value="newsletter">
+                                                        <label for="addcontact">Add to my contacts</label>
+                                                    </div>
+
+                                        </form>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="col-md-8 ">
+                                    <div class="custom-section-padding">
+                                        <h2>Delivery deadline</h2>
+                                        <div class="dashboard-padding">
+                                            <div class="col-md-4">
+                                                <h6 class="mb-none ">Delivery date </h6><br>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="date" name="bday"><br>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="custom-section-padding">
+                                        <h2>Insurance</h2>
+                                        <div class="dashboard-padding">
+                                            <div class="col-md-6">
+                                                <h6 class="mb-none ">We offer 100% coverage of the value </h6><br>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="col-md-3 col-md-offset-9">
+
+                                        <input type="submit" value="Submit" class="btn button-dashboard "
+                                               data-loading-text="Loading...">
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+        </section>
+        <section class=" bg-dashboard head-dashboard ">
+
+        </section>
+    </div>
+{% endblock %}

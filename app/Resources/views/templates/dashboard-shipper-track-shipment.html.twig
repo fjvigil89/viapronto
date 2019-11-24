@@ -1,0 +1,260 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+        <section class=" bg-dashboard head-dashboard ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title-dashboard">Welcome Rhod</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dashboard">
+
+
+
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        {% include 'templates/side-dashboard.html.twig' %}
+                    </div>
+                    <div class="col-md-8 bg-white">
+                        <section class="custom-section-padding">
+                            <div class="container ">
+
+                                <h2>Track shipment</h2>
+                                <div class="row ">
+
+                                    <div class="form-group">
+                                        <div class="col-md-2">
+                                            <h6 class="mb-none ">Enter tracking number</h6><br>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" value="" maxlength="100" class="form-control"
+                                                   name="trackingnumber" id="trackingnumber" required>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="submit" value="track" class="btn button-dashboard "
+                                                   data-loading-text="Loading...">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="row ">
+
+                                    <div class="col-md-8 ">
+
+                                        <div class="featured-boxes mt-none mb-none">
+                                            <div class="featured-box featured-box-quaternary mt-xl">
+                                                <div class="box-content left-align">
+                                                    <h4 class="mb-none left-align">Package information</h4><br>
+
+                                                    <form id="contactForm" action="php/contact-form.php" method="POST">
+
+
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Tracking number</strong>
+                                                                </h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">1234323</h6><br>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Description</strong></h6>
+                                                                <br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">Brother's birthday</h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Delivery code</strong></h6>
+                                                                <br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">12423323</h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Number of items</strong>
+                                                                </h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">2</h6><br>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Price estimate</strong>
+                                                                </h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">US$ 40.00 </h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Weight</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">5 lb</h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Comments</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">qqqqqqqqqqqqqq</h6><br>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="row ">
+
+                                    <div class="col-md-8 ">
+
+                                        <div class="featured-boxes mt-none mb-none">
+                                            <div class="featured-box featured-box-quaternary mt-xl">
+                                                <div class="box-content left-align">
+                                                    <h4 class="mb-none ">Receiver information</h4><br>
+
+                                                    <form id="contactForm" action="php/contact-form.php" method="POST">
+
+
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Contact</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">Carlos Castro</h6><br>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Country</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">Mexico</h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dashboard-padding">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>City</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">Veracruz</h6><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <div class="col-md-4">
+                                                                <h6 class="mb-none "><strong>Address</strong></h6><br>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <h6 class="mb-none ">123 Av Corrientes</h6><br>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="row ">
+                                    <div class="col-md-8 ">
+                                        <div class="featured-boxes mt-none mb-none">
+                                            <div class="featured-box featured-box-quaternary mt-xl">
+                                                <div class="box-content left-align">
+
+                                                    <h4 class="mb-none ">Summary</h4><br>
+                                                    <div class="dashboard-padding">
+                                                        <div class="col-md-4">
+                                                            <h6 class="mb-none "><strong>Shipped by </strong></h6><br>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <h6 class="mb-none ">Tim Hortons</h6><br>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="dashboard-padding">
+                                                        <div class="col-md-4">
+                                                            <h6 class="mb-none "><strong>Status</strong></h6><br>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <h6 class="mb-none ">Delivered</h6><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dashboard-padding">
+                                                        <div class="col-md-4">
+                                                            <h6 class="mb-none "><strong>Delivered at</strong></h6><br>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <h6 class="mb-none ">10h 30</h6><br>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-md-4">
+                                                            <h6 class="mb-none "><strong>Additional notes</strong></h6>
+                                                            <br>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <textarea class="form-control" rows="5"
+                                                                      id="comment"></textarea>
+                                                            <br>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+        </section>
+        <section class=" bg-dashboard head-dashboard ">
+
+        </section>
+    </div>
+{% endblock %}

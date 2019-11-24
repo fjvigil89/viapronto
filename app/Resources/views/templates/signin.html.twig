@@ -1,0 +1,132 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+
+
+
+
+            <section class="parallax section section-text-light section-parallax section-center image_parallax" data-plugin-parallax
+                     data-plugin-options="{'speed': 1.5}" data-image-src="img/photos/signin.jpg">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="slider-contact-form">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-md-5 col-md-offset-7">
+
+                                        <div class="featured-boxes mt-none mb-none">
+                                            <div class="featured-box featured-box-primary mt-xl">
+                                                <div class="box-content">
+                                                    <p style="font-size:1.4em;color: #428bca">Sign in</p><br>
+
+                                                    <form id="contactForm" action="php/contact-form.php" method="POST">
+
+                                                        <p style="text-align:center";>Don't have an account?  <a href="{{ path('signup') }}">Sign up</a></p>
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+
+                                                                    <input type="text" placeholder="Email" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="email" id="email" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+
+                                                                    <input type="password" placeholder="Password" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="psw" id="psw" required>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <input type="submit" value="Sign in" class="btn btn-primary btn-block" data-loading-text="Loading...">
+                                                                <br><p style="text-align:left";> <a href="{{ path('signup') }}">Forgot password ? </a></p>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <div class="alert alert-success hidden" id="contactSuccess">
+                                                                    Message has been sent to us.
+                                                                </div>
+
+                                                                <div class="alert alert-danger hidden" id="contactError">
+                                                                    Error sending your message.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+
+
+
+
+
+{% endblock %}

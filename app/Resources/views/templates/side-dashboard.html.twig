@@ -1,0 +1,67 @@
+{% block body %}
+
+
+
+
+
+
+
+    <div class="nav-side-menu">
+        <div class="brand ">My dashboard</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+                <li data-toggle="collapse" data-target="#profile" class="collapsed active">
+                    <a href="#">
+                        <i class="fa fa-user fa-lg"></i> Profile
+                    </a>
+                </li>
+                <ul class="sub-menu collapse" id="profile">
+
+                    <li><a href="{{ path('dashboard-myprofile') }}">My profile</a></li>
+
+                    <li><a href="{{ path('dashboard-change-pwd') }}">Change password</a></li>
+
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#shipper" class="collapsed ">
+                    <a href="#"><i class="fa fa-shopping-bag fa-lg"></i> Shipper </a>
+                </li>
+                <ul class="sub-menu collapse" id="shipper">
+                    <li><a href="{{ path('dashboard-shipper-ship-a-package') }}">Ship a package</a></li>
+                    <li><a href="{{ path('dashboard-shipper-void') }}">Void shipment</a></li>
+                    <li><a href="{{ path('dashboard-shipper-history') }}">View shipment history</a></li>
+                    <li><a href="{{ path('dashboard-shipper-track-shipment') }}">Track shipment</a></li>
+                    <li><a href="{{ path('homepage') }}">Get price estimate</a></li>
+                    <li><a href="{{ path('dashboard-shipper-contact') }}">Contacts</a></li>
+                </ul>
+
+                <li data-toggle="collapse" data-target="#handler" class="collapsed">
+                    <a href="#"><i class="fa fa-car fa-lg"></i> Handler </a>
+                </li>
+                <ul class="sub-menu collapse" id="handler">
+                    <li><a href="{{ path('dashboard-handler-bank-account-info') }}">Bank account information</a></li>
+                    <li><a href="{{ path('dashboard-handler-credit-info') }}">Credit card information</a></li>
+                    <li><a href="{{ path('dashboard-handler-payment-history') }}">Payments history</a></li>
+                    <li><a href="{{ path('dashboard-myprofile') }}">View package available</a></li>
+                    <li><a href="{{ path('dashboard-handler-view-current-shipment') }}">View current shipments</a></li>
+                    <li><a href="{{ path('dashboard-handler-shipment-history') }}">View  shipments history</a></li>
+                    <li><a href="{{ path('dashboard-myprofile') }}">Create alert</a></li>
+                    <li><a href="{{ path('dashboard-myprofile') }}">Find locations</a></li>
+
+
+
+                </ul>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,89 @@
+
+
+{% block body %}
+
+
+
+
+
+
+
+                        <aside class="sidebar color-white ">
+
+
+                            <p class = "color-white" >Profile</p>
+                            <ul class="list list-icons list-icons-style-3 mt-xlg">
+                                <li><a href="{{ path('dashboard-shipper-myprofile') }}"><i class="fa fa-map-marker"></i></a> My profile</li>
+
+                                <li><a href="{{ path('dashboard-shipper-change-pwd') }}"><i class="fa fa-envelope"></i></a>Change password</li>
+                            </ul>
+
+
+
+                            <div class="col-md-12">
+                                <div class="panel-group without-bg without-borders" id="accordion8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle color-white" data-toggle="collapse" data-parent="#accordion8" href="#collapse8One">
+                                                    Shipper
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse8One" class="accordion-body collapse in">
+                                            <div class="panel-body">
+                                               <ul class="list list-icons list-icons-style-3 mt-xlg">
+                                                    <li><a href="{{ path('dashboard-shipper-ship-a-package') }}l"><i class="fa fa-map-marker"></i></a> Ship a package</li>
+                                                    <li><a href="{{ path('dashboard-shipper-void') }}"><i class="fa fa-phone"></i></a> Void shipment</li>
+                                                    <li><a href="{{ path('dashboard-shipper-history') }}"><i class="fa fa-envelope"></i></a>View shipment history</li>
+                                                    <li><a href="{{ path('dashboard-shipper-track-shipment') }}"><i class="fa fa-phone"></i></a> Track shipment</li>
+                                                    <li><a href="{{ path('homepage') }}"><i class="fa fa-envelope"></i></a>Get price estimate</li>
+                                                    <li><a href="{{ path('dashboard-shipper-contact') }}"><i class="fa fa-phone"></i></a> Contacts</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#collapse8Two">
+                                                   Handler
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse8Two" class="accordion-body collapse">
+                                            <div class="panel-body">
+                                                <br><p class = "color-white" >Earnings</p>
+                                                <ul class="list list-icons list-icons-style-3 mt-xlg">
+                                                    <li><a href="{{ path('dashboard-handler-bank-account-info') }}"><i class="fa fa-map-marker"></i></a>Bank account information</li>
+                                                    <li><a href="{{ path('dashboard-handler-credit-info') }}"><i class="fa fa-phone"></i></a>Credit card information</li>
+                                                    <li><a href="{{ path('dashboard-handler-payment-history') }}"><i class="fa fa-envelope"></i></a>Payments history</li>
+
+                                                </ul>
+
+                                                <br><p class = "color-white" >Shipment</p>
+                                                <ul class="list list-icons list-icons-style-3 mt-xlg">
+                                                    <li><a href="{{ path('dashboard-handler-myprofile') }}"><i class="fa fa-map-marker"></i></a>View package available</li>
+                                                    <li><a href="{{ path('dashboard-handler-view-current-shipment') }}"><i class="fa fa-phone"></i></a>View current shipments</li>
+                                                    <li><a href="{{ path('dashboard-handler-shipment-history') }}"><i class="fa fa-envelope"></i></a>View  shipments history</li>
+
+                                                </ul>
+                                                <br><p class = "color-white" >Others</p>
+                                                <ul class="list list-icons list-icons-style-3 mt-xlg">
+                                                    <li><a href="{{ path('dashboard-handler-myprofile') }}"><i class="fa fa-map-marker"></i></a>Create alert</li>
+                                                    <li><a href="{{ path('dashboard-handler-myprofile') }}"><i class="fa fa-map-marker"></i></a>Find locations</li>
+                                                </ul> </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </aside>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libcities list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Cityid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libCity in libCities %}
+            <tr>
+                <td><a href="{{ path('libcity_show', { 'cityid': libCity.cityid }) }}">{{ libCity.city }}</a></td>
+                <td>{{ libCity.cityid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libcity_show', { 'cityid': libCity.cityid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libcity_edit', { 'cityid': libCity.cityid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libcity_new') }}">Create a new libCity</a>
+        </li>
+    </ul>
+{% endblock %}

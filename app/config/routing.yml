@@ -1,0 +1,98 @@
+app_vpagent:
+    resource: "@AppBundle/Controller/Web/VpagentController.php"
+    type:     annotation
+
+app_user:
+    resource: "@AppBundle/Controller/Web/UserController.php"
+    type:     annotation
+
+app_stop:
+    resource: "@AppBundle/Controller/Web/StopController.php"
+    type:     annotation
+
+app_shipment:
+    resource: "@AppBundle/Controller/Web/ShipmentController.php"
+    type:     annotation
+
+app_lib_shipmentstatus:
+    resource: "@AppBundle/Controller/Web/LibShipmentstatusController.php"
+    type:     annotation
+
+app_lib_province:
+    resource: "@AppBundle/Controller/Web/LibProvinceController.php"
+    type:     annotation
+
+app_lib_paymentmethod:
+    resource: "@AppBundle/Controller/Web/LibPaymentmethodController.php"
+    type:     annotation
+
+app_lib_itemcategory:
+    resource: "@AppBundle/Controller/Web/LibItemcategoryController.php"
+    type:     annotation
+
+app_lib_deliverytype:
+    resource: "@AppBundle/Controller/Web/LibDeliverytypeController.php"
+    type:     annotation
+
+app_lib_deliveryoption:
+    resource: "@AppBundle/Controller/Web/LibDeliveryoptionController.php"
+    type:     annotation
+
+app_lib_currency:
+    resource: "@AppBundle/Controller/Web/LibCurrencyController.php"
+    type:     annotation
+
+app_lib_city:
+    resource: "@AppBundle/Controller/Web/LibCityController.php"
+    type:     annotation
+
+app_lib_businesstype:
+    resource: "@AppBundle/Controller/Web/LibBusinesstypeController.php"
+    type:     annotation
+
+app_lib_bookingstatus:
+    resource: "@AppBundle/Controller/Web/LibBookingstatusController.php"
+    type:     annotation
+
+app_lib_agentaccountstatus:
+    resource: "@AppBundle/Controller/Web/LibAgentaccountstatusController.php"
+    type:     annotation
+
+app_lib_accountstatus:
+    resource: "@AppBundle/Controller/Web/LibAccountstatusController.php"
+    type:     annotation
+
+app_identification:
+    resource: "@AppBundle/Controller/Web/IdentificationController.php"
+    type:     annotation
+
+app_earning:
+    resource: "@AppBundle/Controller/Web/EarningController.php"
+    type:     annotation
+
+app_country:
+    resource: "@AppBundle/Controller/Web/CountryController.php"
+    type:     annotation
+
+app_contact:
+    resource: "@AppBundle/Controller/Web/ContactController.php"
+    type:     annotation
+
+app_cargo:
+    resource: "@AppBundle/Controller/Web/CargoController.php"
+    type:     annotation
+
+app_booking:
+    resource: "@AppBundle/Controller/Web/BookingController.php"
+    type:     annotation
+
+app_web:
+    resource: "@AppBundle/Controller/Web"
+    type:     annotation
+
+app_api:
+    resource: "@AppBundle/Controller/Api"
+    type:     annotation
+
+logout:
+    path: /logout

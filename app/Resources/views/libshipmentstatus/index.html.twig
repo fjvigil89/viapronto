@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libshipmentstatuses list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Shipmentstatusid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libShipmentstatus in libShipmentstatuses %}
+            <tr>
+                <td><a href="{{ path('libshipmentstatus_show', { 'shipmentstatusid': libShipmentstatus.shipmentstatusid }) }}">{{ libShipmentstatus.status }}</a></td>
+                <td>{{ libShipmentstatus.shipmentstatusid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libshipmentstatus_show', { 'shipmentstatusid': libShipmentstatus.shipmentstatusid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libshipmentstatus_edit', { 'shipmentstatusid': libShipmentstatus.shipmentstatusid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libshipmentstatus_new') }}">Create a new libShipmentstatus</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libdeliverytype</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Type</th>
+                <td>{{ libDeliverytype.type }}</td>
+            </tr>
+            <tr>
+                <th>Deliverytypeid</th>
+                <td>{{ libDeliverytype.deliverytypeid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libdeliverytype_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libdeliverytype_edit', { 'deliverytypeid': libDeliverytype.deliverytypeid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

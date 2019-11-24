@@ -1,0 +1,294 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+    <div role="main" class="main">
+
+        <div class="slider-with-overlay">
+
+            <section class="section section-text-light section-background m-none"
+                     style="background: url('img/photos/contactus.jpg'); background-size: cover;height: 50em">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="slider-contact-form">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 ">
+
+                            <div class="featured-boxes mt-none mb-none">
+                                <div class="featured-box featured-box-primary mt-xl">
+                                    <div class="box-content">
+                                        <p class="mb-none text-center grand-font-title head-dashboard">Get a quote</p>
+                                        <br>
+
+                                        <form id="contactForm" action="php/contact-form.php" method="POST">
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-2 ">
+                                                        From
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3 ">
+                                                        <select name="Country" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3 ">
+                                                        <select name="Province" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3">
+                                                        <select name="City" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-2">
+                                                        To
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3">
+                                                        <select name="Country" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3">
+                                                        <select name="Province" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3">
+                                                        <select name="City" class="form-control">
+                                                            <option value="canada">Canada</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="cuba">Cuba</option>
+
+                                                        </select>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <hr>
+                                            <section><br>
+                                                <div class="container">
+                                                    <h4 class="mb-none ">Package size</h4><br>
+                                                    <div class="col-md-6 col-sm-6 ">
+
+											<span class="thumb-info thumb-info-hide-wrapper-bg">
+
+												<span class="thumb-info-caption">
+												<h4 class="mb-none text-center">Dimension</h4><br>
+												<div class="row">
+												<div class="form-group">
+
+
+
+													<div class="col-md-2 col-md-offset-1">
+												<input type="text" value="L"
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="large" id="large" required>
+
+													</div>
+														<div class="col-md-1 ">
+														x
+													</div>
+
+													<div class="col-md-2">
+												<input type="text" value="W"
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="weight" id="weight" required>
+
+
+													</div>
+													<div class="col-md-1 ">
+														x
+													</div>
+
+													<div class="col-md-2">
+												<input type="text" value="H"
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="height" id="height" required>
+
+
+													</div>
+												<div class="col-md-2">
+													<select name="City" class="form-control">
+														  <option value="lb">lb</option>
+														  <option value="kg">kg</option>
+
+
+													</select>
+													</div>
+
+
+												</div>
+
+												</div>
+												</span>
+											</span>
+
+
+                                                    </div>
+
+
+                                                    <div class="col-md-3 col-sm-6 ">
+
+											<span class="thumb-info thumb-info-hide-wrapper-bg">
+
+												<span class="thumb-info-caption">
+												<h4 class="mb-none text-center">Weight</h4><br>
+																									<div class="row">
+												<div class="form-group">
+
+
+
+
+													<div class="col-md-6 col-md-offset-1">
+												<input type="text" value=""
+                                                       data-msg-required="Please enter the subject." maxlength="100"
+                                                       class="form-control" name="weight" id="weight" required>
+
+
+													</div>
+
+
+												<div class="col-md-4">
+													<select name="City" class="form-control">
+														  <option value="lb">lb</option>
+														  <option value="kg">kg</option>
+
+
+													</select>
+													</div>
+
+
+												</div>
+
+												</div>
+												</span>
+											</span>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </section>
+
+
+                                            <br><br>
+
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-md-2">
+                                                            <h4 class="mb-none ">Delivery option</h4><br>
+
+                                                        </div>
+                                                        <div class="col-md-3">
+
+                                                            <select name="delivery_option" class="form-control">
+                                                                <option value="1">Airport handle</option>
+                                                                <option value="2">Pick up location</option>
+                                                                <option value="3">home delivery</option>
+
+                                                            </select></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row right-align">
+
+                                                <input type="submit" value="Get estimate" class="btn btn-primary "
+                                                       data-loading-text="Loading...">
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="alert alert-success hidden" id="contactSuccess">
+                                                        Message has been sent to us.
+                                                    </div>
+
+                                                    <div class="alert alert-danger hidden" id="contactError">
+                                                        Error sending your message.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libitemcategory</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Category</th>
+                <td>{{ libItemcategory.category }}</td>
+            </tr>
+            <tr>
+                <th>Itemcategoryid</th>
+                <td>{{ libItemcategory.itemcategoryid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libitemcategory_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libitemcategory_edit', { 'itemcategoryid': libItemcategory.itemcategoryid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

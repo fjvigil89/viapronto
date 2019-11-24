@@ -1,0 +1,413 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+    <div role="main" class="main">
+
+        <div class="slider-container rev_slider_wrapper" style="height: 100%;">
+            <div id="revolutionSlider" class="slider rev_slider manual">
+                <ul>
+                    <li data-transition="fade">
+                        <img src="{{ asset('img/photos/shipper-slide1.jpg') }}"
+                             alt=""
+                             data-bgposition="center center"
+                             data-bgfit="cover"
+                             data-bgrepeat="no-repeat"
+                             data-bgparallax="1"
+                             class="rev-slidebg">
+
+                        <h1 class="tp-caption custom-secondary-font font-weight-bold text-color-light"
+                            data-x="['left','left','left','left']" data-hoffset="['475','200','30','30']"
+                            data-y="center" data-voffset="['-150','110','-80','-40']"
+                            data-start="800"
+                            data-transform_in="y:[-300%];opacity:0;s:500;" style="font-size: 50px;">Keep moving</h1>
+
+                        <div class="tp-caption custom-secondary-font font-weight-bold text-color-light"
+                             data-x="['left','left','left','left']" data-hoffset="['30','30','30','30']"
+                             data-y="center" data-voffset="['-42','-42','-42','2']"
+                             data-start="800"
+                             data-transform_in="y:[-300%];opacity:0;s:500;" style="font-size: 42px;"></div>
+
+                        <a href="{{ path('signin') }}" class="btn btn-primary btn-lg tp-caption text-uppercase text-color-light custom-border-radius"
+                           data-hash
+                           data-hash-offset="85"
+                           data-x="['left','left','left','left']" data-hoffset="['550','200','30','30']"
+                           data-y="center" data-voffset="['-70','200','60','100']"
+                           data-start="1500"
+                           style="font-size: 2em; padding: 15px 6px;"
+                           data-transform_in="y:[-300%];opacity:0;s:500;">Book now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="custom-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h1 class="font-weight-bold text-color-dark">Shipper</h1>
+                        <h4 class="pl-lg">As a shipper, you can trust our affordable yet trustworthy services to deliver your packages to the destination of your choice, whether it is within a domestic (local or national) range, or an international range. All you have to do is register, and we will take it from there.</h4>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+
+
+											<span class="thumb-info thumb-info-hide-wrapper-bg">
+												<span class="thumb-info-wrapper">
+													<img src="{{ asset('img/photos/domestic.jpg') }}" class="img-responsive"
+                                                         alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Domestic</span>
+
+													</span>
+												</span>
+												<span class="thumb-info-caption">
+													<span class="thumb-info-caption-text">LoDuis sollicitudin hendrerit magna eu dictum. In at sapien vel nunc maximus dictum. Pellentesque orci quam, volutpat vitae placerat vel, bibendum non tellus. Donec turpis ipsum, porta in nulla ac, scelerisque pretium nulla. Nunc in arcu a lectus tincidunt fringilla vel malesuada felis. Nulla pellentesque vestibulum lorem, ut pretium tortor. Curabitur dictum dolor ut ex ullamcorper, nec luctus dui tristique. Pellentesque congrem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+												</span>
+											</span>
+
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+
+
+											<span class="thumb-info thumb-info-hide-wrapper-bg">
+												<span class="thumb-info-wrapper">
+													<img src="{{ asset('img/photos/local.jpg') }}" class="img-responsive"
+                                                         alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Local</span>
+
+													</span>
+												</span>
+												<span class="thumb-info-caption">
+													<span class="thumb-info-caption-text">LDuis sollicitudin hendrerit magna eu dictum. In at sapien vel nunc maximus dictum. Pellentesque orci quam, volutpat vitae placerat vel, bibendum non tellus. Donec turpis ipsum, porta in nulla ac, scelerisque pretium nulla. Nunc in arcu a lectus tincidunt fringilla vel malesuada felis. Nulla pellentesque vestibulum lorem, ut pretium tortor. Curabitur dictum dolor ut ex ullamcorper, nec luctus dui tristique. Pellentesque congorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+												</span>
+											</span>
+
+
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+
+
+											<span class="thumb-info thumb-info-hide-wrapper-bg">
+												<span class="thumb-info-wrapper">
+													<img src="{{ asset('img/photos/international.jpg') }}" class="img-responsive"
+                                                         alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">International</span>
+
+													</span>
+												</span>
+												<span class="thumb-info-caption">
+													<span class="thumb-info-caption-text">Lorem ipsumDuis sollicitudin hendrerit magna eu dictum. In at sapien vel nunc maximus dictum. Pellentesque orci quam, volutpat vitae placerat vel, bibendum non tellus. Donec turpis ipsum, porta in nulla ac, scelerisque pretium nulla. Nunc in arcu a lectus tincidunt fringilla vel malesuada felis. Nulla pellentesque vestibulum lorem, ut pretium tortor. Curabitur dictum dolor ut ex ullamcorper, nec luctus dui tristique. Pellentesque cong dolor sit amet, consectetur adipiscing elit.</span>
+
+												</span>
+											</span>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="parallax section section-text-light section-parallax section-center" data-plugin-parallax
+                 data-plugin-options="{'speed': 1.5}" data-image-src="img/photos/img_shipper1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-1 left-align ">
+                        <h1 class=" font-title-body left-align">Shipper</h1>
+                        <p class="font-body left-align">As a shipper, you can trust our affordable yet trustworthy
+                            services to deliver your packages to the destination of your choice, whether it is within a
+                            domestic (local or national) range, or an international range. All you have to do is
+                            register, and we will take it from there</p>
+   </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="mb-sm word-rotator-title text-center">
+
+            <strong class="inverted">
+									<span class="word-rotate" data-plugin-options="{'delay': 2000, 'animDelay': 300}">
+										<span class="word-rotate-items">
+											<span>Check</span>
+											<span>book</span>
+
+										</span>
+									</span>
+            </strong>
+            your shipment now
+        </h1>
+
+
+
+
+        <div class="row">
+            <div class="col-md-12 text-center dashboard-padding">
+
+                <div class="owl-carousel owl-theme stage-margin" data-plugin-options="{'items': 6, 'margin': 10, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Mexico DF</span><br>
+                            <span style="font-size: 0.7em;">from Vancouver</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">06lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 18</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Toronto</span><br>
+                            <span style="font-size: 0.7em;">from Vancouver</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">08lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 21</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">New york</span><br>
+                            <span style="font-size: 0.7em;">from Montreal</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">10lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 22</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Cancun</span><br>
+                            <span style="font-size: 0.7em;">from Miami</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">12lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 17</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Mexico DF</span><br>
+                            <span style="font-size: 0.7em;">from Otawa</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">12lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 11</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Los Angeles</span><br>
+                            <span style="font-size: 0.7em;">from Miami</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">08lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 19</span><br>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span style="font-size: 1.5em;">Mexico DF</span><br>
+                            <span style="font-size: 0.7em;">from Vancouver</span></div>
+                        <div class="panel-body">
+
+                            <span style="font-size: 2em; ">06lb</span><br>
+                            <span style="font-size: 0.7em; ">Available</span><br>
+                            <span style="font-size: 1em; ">DEC 18</span><br>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <a href="{{ path('booking') }}" class="btn btn-primary" role="button">booking now</a>
+            </div>
+        </div>
+
+
+        <section class="bg-grisclaire custom-section-padding" >
+            <div class="container">
+                <h1 class=" font-title-body text-center">Benefits</h1>
+                <div class="featured-boxes">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-primary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-globe"></i>
+                                    <h4 class="text-uppercase">Domestic and international delivery</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+                                    <p><a href="/" class="lnk-primary learn-more">Learn More <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-tertiary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-clock-o"></i>
+                                    <h4 class="text-uppercase">Real-time tracking</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+                                    <p><a href="/" class="lnk-tertiary learn-more">Learn more <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-quaternary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-money"></i>
+                                    <h4 class="text-uppercase">Get price estimate</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus. </p>
+                                    <p><a href="/" class="lnk-quaternary learn-more">Learn more <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-primary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-telegram"></i>
+                                    <h4 class="text-uppercase">Fastest and cheapest delivery</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+                                    <p><a href="/" class="lnk-primary learn-more">Learn More <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-tertiary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-check-square-o"></i>
+                                    <h4 class="text-uppercase">Choose your most convenient delivery option</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+                                    <p><a href="/" class="lnk-tertiary learn-more">Learn more <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-quaternary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-cogs"></i>
+                                    <h4 class="text-uppercase">24/7 customer support</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus. </p>
+                                    <p><a href="/" class="lnk-quaternary learn-more">Learn more <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6"></div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-box featured-box-tertiary featured-box-effect-1">
+                                <div class="box-content">
+                                    <i class="icon-featured fa fa-id-card-o"></i>
+                                    <h4 class="text-uppercase">Yes, you are insured</h4>
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+                                    <p><a href="/" class="lnk-tertiary learn-more">Learn more <i class="fa fa-angle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="parallax section section-text-light section-parallax section-center" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/photos/stuff.jpg">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-6">
+                        <h2 style="color:white">SHIP ANYTHING</h2>
+
+                        <h3 style="color:white">YOU WANT</h3>
+                        <h2 style="color:white">AND </h2>
+                        <h3 style="color:white">TRACK IT </h3>
+                        <h2 style="color:white"> IN REAL TIME </h2>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>	<hr>
+
+
+
+        <section class="custom-section-padding" >
+            <div class="container">
+                <h1 class=" font-title-body text-center">Ship the package in 4 steps</h1>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/photos/phone.png') }}" alt class="img-responsive" />
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/photos/phone.png') }}" alt class="img-responsive" />
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/photos/phone.png') }}" alt class="img-responsive" />
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/photos/phone.png') }}" alt class="img-responsive" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+{% endblock %}

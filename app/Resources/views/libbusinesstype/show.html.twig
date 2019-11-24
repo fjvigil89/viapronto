@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libbusinesstype</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Businesstype</th>
+                <td>{{ libBusinesstype.businesstype }}</td>
+            </tr>
+            <tr>
+                <th>Businesstypeid</th>
+                <td>{{ libBusinesstype.businesstypeid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libbusinesstype_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libbusinesstype_edit', { 'businesstypeid': libBusinesstype.businesstypeid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

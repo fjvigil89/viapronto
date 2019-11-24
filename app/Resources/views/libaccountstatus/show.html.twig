@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libaccountstatus</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Status</th>
+                <td>{{ libAccountstatus.status }}</td>
+            </tr>
+            <tr>
+                <th>Accountstatusid</th>
+                <td>{{ libAccountstatus.accountstatusid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libaccountstatus_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('libaccountstatus_edit', { 'accountstatusid': libAccountstatus.accountstatusid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

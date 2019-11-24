@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>User</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Username</th>
+                <td>{{ user.username }}</td>
+            </tr>
+            <tr>
+                <th>Salt</th>
+                <td>{{ user.salt }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ user.password }}</td>
+            </tr>
+            <tr>
+                <th>Isactive</th>
+                <td>{% if user.isActive %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>{{ user.firstname }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ user.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>Phoneprimary</th>
+                <td>{{ user.phoneprimary }}</td>
+            </tr>
+            <tr>
+                <th>Phonealternate</th>
+                <td>{{ user.phonealternate }}</td>
+            </tr>
+            <tr>
+                <th>Communicationpreference</th>
+                <td>{{ user.communicationpreference }}</td>
+            </tr>
+            <tr>
+                <th>Preferredlanguage</th>
+                <td>{{ user.preferredlanguage }}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{ user.address }}</td>
+            </tr>
+            <tr>
+                <th>Zipcode</th>
+                <td>{{ user.zipcode }}</td>
+            </tr>
+            <tr>
+                <th>Ccnameoncard</th>
+                <td>{{ user.ccnameoncard }}</td>
+            </tr>
+            <tr>
+                <th>Ccnumber</th>
+                <td>{{ user.ccnumber }}</td>
+            </tr>
+            <tr>
+                <th>Banknumber</th>
+                <td>{{ user.banknumber }}</td>
+            </tr>
+            <tr>
+                <th>Bankname</th>
+                <td>{{ user.bankname }}</td>
+            </tr>
+            <tr>
+                <th>Branchnumber</th>
+                <td>{{ user.branchnumber }}</td>
+            </tr>
+            <tr>
+                <th>Accountnumber</th>
+                <td>{{ user.accountnumber }}</td>
+            </tr>
+            <tr>
+                <th>Userid</th>
+                <td>{{ user.userid }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('user_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('user_edit', { 'userid': user.userid }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libcurrencies list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Currencyid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libCurrency in libCurrencies %}
+            <tr>
+                <td><a href="{{ path('libcurrency_show', { 'currencyid': libCurrency.currencyid }) }}">{{ libCurrency.currency }}</a></td>
+                <td>{{ libCurrency.currencyid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libcurrency_show', { 'currencyid': libCurrency.currencyid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libcurrency_edit', { 'currencyid': libCurrency.currencyid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libcurrency_new') }}">Create a new libCurrency</a>
+        </li>
+    </ul>
+{% endblock %}

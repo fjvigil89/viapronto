@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Libaccountstatuses list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Accountstatusid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for libAccountstatus in libAccountstatuses %}
+            <tr>
+                <td><a href="{{ path('libaccountstatus_show', { 'accountstatusid': libAccountstatus.accountstatusid }) }}">{{ libAccountstatus.status }}</a></td>
+                <td>{{ libAccountstatus.accountstatusid }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('libaccountstatus_show', { 'accountstatusid': libAccountstatus.accountstatusid }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('libaccountstatus_edit', { 'accountstatusid': libAccountstatus.accountstatusid }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('libaccountstatus_new') }}">Create a new libAccountstatus</a>
+        </li>
+    </ul>
+{% endblock %}
